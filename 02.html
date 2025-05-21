@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成績加總與平均</title>
+</head>
+<body>
+    <script>
+        let grades = [70, 50, 84];
+        grades.push(35);
+        grades.push(100);
+
+        let sum = 0;
+        for (let i = 0; i < grades.length; i++) {
+            document.write("第 " + (i + 1) + " 筆成績：" + grades[i] + "<br>");
+            sum += grades[i];
+        }
+
+        let average = sum / grades.length;
+
+        document.write("總和：" + sum + "<br>");
+        document.write("平均數：" + average.toFixed(2) + "<br>");
+    </script>
+</body>
+</html>

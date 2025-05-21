@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我最喜歡的飲料</title>
+</head>
+<body>
+    <h2>我最喜歡的飲料</h2>
+    <script>
+        let drinks = ['烏龍青茶', '無糖綠茶', '美式咖啡', '珍珠青茶', '義式咖啡', '能量飲料', '可樂'];
+
+        document.write('<table border="1">');
+        document.write('<tr><th>編號</th><th>飲料名稱</th></tr>');
+        for (let i = 0; i < drinks.length; i++) {
+            document.write('<tr><td>飲料' + (i + 1) + '</td>');
+            document.write('<td>' + drinks[i] + '</td></tr>');
+        }
+        document.write('</table>');
+    </script>
+    <h2>我最喜歡的飲料</h2>
+    <script>   
+        let drinks1 = ['烏龍青茶', '無糖綠茶', '美式咖啡', '珍珠青茶', '義式咖啡', '能量飲料', '可樂'];
+        document.write('<table border="1">');
+        document.write('<tr>');
+        for (let i = 0; i < drinks.length; i++) {
+            document.write('<th>飲料' + (i + 1) + '</th>');
+        }
+        document.write('</tr>');
+        document.write('<tr>');
+        for (let i = 0; i < drinks.length; i++) {
+            document.write('<td>' + drinks[i] + '</td>');
+        }
+        document.write('</tr>');
+        document.write('</table>');
+    </script>
+</body>
+</html>
+
+
+
+

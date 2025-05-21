@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>成績表</title>
+</head>
+<body>
+    <script>
+        let header = ['姓名', '國文', '英文', '數學'];
+        let students = [
+            ['王大同', 85, 88, 77],
+            ['林麥可', 99, 86, 89],
+            ['張淑芬', 75, 92, 86]
+        ];
+
+        document.write('<table border="1">');
+        document.write('<tr>');
+        for (let i = 0; i < header.length; i++) {
+            document.write('<th>' + header[i] + '</th>');
+        }
+        document.write('</tr>');
+
+        for (let i = 0; i < students.length; i++) {
+            document.write('<tr>');
+            for (let j = 0; j < students[i].length; j++) {
+                document.write('<td>' + students[i][j] + '</td>');
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+    </script>
+</body>
+</html>
